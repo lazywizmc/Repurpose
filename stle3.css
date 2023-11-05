@@ -1,114 +1,140 @@
 /* Reset some default browser styles */
-body, h1, h2, p, ul, li {
+body, h1, h2, p, ul, li, form, label, input, button {
     margin: 0;
     padding: 0;
 }
 
-/* Apply a background image to the body for an artistic effect */
+/* Apply a background color to the body */
 body {
-    background-image: url('background.jpg');
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Style the header */
 header {
-    background-color: transparent;
+    background-color: #3498db;
     text-align: center;
+
     padding: 20px 0;
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 3em;
+    font-size: 1em;
     color: #fff;
-    text-shadow: 2px 2px 4px #000;
 }
 
-header nav ul {
+/* Style the navigation */
+nav ul {
     list-style: none;
+    text-align: center;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: #3498db;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ffcc00;
 }
 
 /* Style the main content section */
 main {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-}
-
-.product {
-    background-color: transparent;
-    border: 2px solid #ffcc00;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #333;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product h2 {
+.profile-info {
+    text-align: center;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
     font-size: 1.5em;
     margin: 10px 0;
     color: #333;
 }
 
-.product p {
-    margin: 10px 0;
+.profile-info p {
+    margin: 5px 0;
+    color: #777;
 }
 
-.product button {
-    background-color: #ffcc00;
+.profile-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Style the Order History section */
+.order-history {
+    margin-top: 20px;
+}
+
+.order-history h2 {
+    font-size: 1.5em;
     color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Style the Account Settings section */
+.account-settings {
+    margin-top: 20px;
+}
+
+.account-settings h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.product button:hover {
-    background-color: #ff9900;
 }
 
 /* Style the footer */
 footer {
-    background-color: transparent;
+    background-color: #3498db;
     text-align: center;
     padding: 10px 0;
-    color: #333;
+    color: #fff;
 }
-
-/* Add custom fonts */
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-

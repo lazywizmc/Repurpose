@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My E-Commerce Profile</title>
+    <link rel="stylesheet" type="text/css" href="stle3.css">
+</head>
+<body>
+    <header>
+        <h1><img src="assets/icons/Logo.png"></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="page2.html">Shop</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="profile-info">
+            <img src="profile-picture.jpg" alt="My Profile Picture">
+            <h2>Your Name</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main St, City, Country</p>
+        </section>
+
+        <section class="Order-history">
+            <h2>Order History</h2>
+            <ul>
+                <li>
+                    <p>Order Date: January 1, 2023</p>
+                    <p>Order Total: $50.00</p>
+                    <p>Order Status: Delivered</p>
+                </li>
+                <li>
+                    <p>Order Date: December 15, 2022</p>
+                    <p>Order Total: $75.00</p>
+                    <p>Order Status: Shipped</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="account-settings">
+            <h2>Account Settings</h2>
+            <p>Change your password:</p>
+            <form>
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+                <br>
+                <button type="submit">Change Password</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My E-Commerce Profile</p>
+    </footer>
+</body>
+</html>
